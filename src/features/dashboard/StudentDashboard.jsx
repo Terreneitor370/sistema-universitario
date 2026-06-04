@@ -1,4 +1,4 @@
-import { StudentScholarshipBanner } from '@features/scholarship/ScholarshipPage'
+import { StudentScholarshipBanner } from '@/features/scholarship/ScholarshipPage'
 import { useAuthStore } from '@store/authStore'
 
 export default function StudentDashboard() {
