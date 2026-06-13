@@ -59,6 +59,7 @@ export const router = createBrowserRouter([
       { path: '/vida-universitaria', element: <VidaUniversitariaPage /> },
       { path: '/aviso-privacidad', element: <AvisoPrivacidadPage /> },
       { path: '/terminos-condiciones', element: <TerminosCondicionesPage /> },
+      { path: '*', element: <NotFoundPage /> },
     ],
   },
   {
@@ -116,5 +117,4 @@ export const router = createBrowserRouter([
     }],
   },
   { path: '/unauthorized', element: <div style={{ padding: '3rem', color: '#d8e3fb', background: '#081425', minHeight: '100vh' }}>No tienes permiso para acceder a esta página.</div> },
-  { path: '*', element: <NotFoundPage /> },
 ])
