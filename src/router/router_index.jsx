@@ -13,6 +13,7 @@ import InvestigacionPage from '@features/landing/InvestigacionPage'
 import VidaUniversitariaPage from '@features/landing/VidaUniversitariaPage'
 import AvisoPrivacidadPage from '@features/landing/AvisoPrivacidadPage'
 import TerminosCondicionesPage from '@features/landing/TerminosCondicionesPage'
+import NotFoundPage from '@features/landing/NotFoundPage'
 
 import AdminDashboard from '@features/dashboard/AdminDashboard'
 import StudentDashboard from '@features/dashboard/StudentDashboard'
@@ -115,5 +116,5 @@ export const router = createBrowserRouter([
     }],
   },
   { path: '/unauthorized', element: <div style={{ padding: '3rem', color: '#d8e3fb', background: '#081425', minHeight: '100vh' }}>No tienes permiso para acceder a esta página.</div> },
-  { path: '*', element: <Navigate to="/" replace /> },
+  { path: '*', element: <NotFoundPage /> },
 ])
